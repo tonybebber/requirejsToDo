@@ -1,4 +1,4 @@
-Require.js // (To Do) - Just giving require.js a try - By [Tony Bebber](http://www.tonybebber.com)
+Require.js // (To Do) - Just giving require.js a try
 ==================================================
 
 ///// About
