@@ -3,7 +3,7 @@ Require.js // (To Do) - Just giving require.js a try
 
 ///// About
 
-Just giving require.js a try. Please excuse the un-original 'To Do' app concept
+Just giving require.js a try
 
 ///// Demo
 
