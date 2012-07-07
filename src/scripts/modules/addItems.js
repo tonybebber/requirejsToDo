@@ -1,4 +1,4 @@
-define(["modules/updateHeading"], function (updateHeading) {
+define(["handlebars", "modules/updateHeading"], function (handlebars, updateHeading) {
     
     var addTodo = function(item) {
         
@@ -8,7 +8,6 @@ define(["modules/updateHeading"], function (updateHeading) {
         
         var todo = $('#todo-template').html();
         var todoTemplate = Handlebars.compile(todo);
-        
         $("#todoList").append(todoTemplate(todoData));
         
         updateHeading.updateHeading();
