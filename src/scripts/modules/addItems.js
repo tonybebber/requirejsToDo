@@ -2,17 +2,14 @@ define(["modules/updateHeading"], function (updateHeading) {
     
     var addTodo = function(item) {
         
-        var markup = "";
+        var todoData = {
+            'todoItem': item
+        };
         
-        markup += "<li>";
-        markup += "<span class='itemWrap'><span class='item'>" + item + "</span></span>";
-        markup += "<span class='btnWrap'>";
-        markup += "<span class='complete'>complete</span>";
-        markup += "<span class='remove'>remove</span>";
-        markup += "</span>";
-        markup += "</li>";
+        var todo = $('#todo-template').html();
+        var todoTemplate = Handlebars.compile(todo);
         
-        $('ul#todoList').append(markup);
+        $("#todoList").append(todoTemplate(todoData));
         
         updateHeading.updateHeading();
         

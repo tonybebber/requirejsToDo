@@ -1,5 +1,11 @@
-require(["modules/addItems", "modules/removeItems", "modules/completeItems"],
-       function (addItems, removeItems, completeItems) {
+require.config({
+    paths: {
+        "handlebars": "handlebars"
+    }
+});
+
+require(["handlebars", "modules/addItems", "modules/removeItems", "modules/completeItems"],
+       function (handlebars, addItems, removeItems, completeItems) {
     
     $('#todoSubmit').click(function() {
         if ($('#todoInput').val()) {

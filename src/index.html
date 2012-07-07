@@ -12,6 +12,19 @@
             <p>What to do? <input type="text" id="todoInput" /> <input type="submit" id="todoSubmit" value="Add something to do" /></p>
             <h2>You don't have anything to do...</h2>
             <ul id="todoList"></ul>
+            
+            <script id="todo-template" type="text/x-handlebars-template">
+                <li>
+                    <span class='itemWrap'>
+                        <span class='item'>{{todoItem}}</span>
+                    </span>
+                    <span class='btnWrap'>
+                        <span class='complete'>complete</span>
+                        <span class='remove'>remove</span>
+                    </span>
+                </li>
+            </script>
+            
         </div>
     </body>
 </html>
